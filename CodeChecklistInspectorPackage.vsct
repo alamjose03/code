@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable">
+
+	<Extern href="stdidcmd.h" />
+	<Extern href="vsshlids.h" />
+
+	<Commands package="CodeChecklistInspectorGuid">
+
+		<Groups>
+			<Group guid="CodeChecklistInspectorGuid" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="CodeChecklistInspectorGuid" id="ShowChecklistCommandId" priority="0x0100" type="Button">
+				<Parent guid="CodeChecklistInspectorGuid" id="MyMenuGroup" />
+				<Icon guid="CodeChecklistInspectorImages" id="bmpPic1" />
+				<Strings>
+					<ButtonText>Mostrar Checklist Inspector</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+
+		<Bitmaps>
+			<Bitmap guid="CodeChecklistInspectorImages" href="Resources\Images_32bit.bmp" usedList="bmpPic1"/>
+		</Bitmaps>
+
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="CodeChecklistInspectorGuid" value="{befd57f3-133d-402a-ba48-0abc8a3d1c01}">
+			<IDSymbol name="MyMenuGroup" value="0x1020" />
+			<IDSymbol name="ShowChecklistCommandId" value="0x0100" />
+		</GuidSymbol>
+
+		<GuidSymbol name="CodeChecklistInspectorImages" value="{2d21fe8e-2190-4b19-911f-114cdfbc1212}">
+			<IDSymbol name="bmpPic1" value="1" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
